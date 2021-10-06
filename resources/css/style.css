@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background:#53626C;
+    padding: 15px;
+    font-family: 'Segoe UI',sans-serif;
+}
+ .navbar .max-width{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.navbar .logo a{
+    color: white;
+    margin-left: -20%;
+    font-size: 35px;
+    font-weight: 700;
+}
+.navbar .logo a span{
+    color: red;
+    font-size: 45px;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: white;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: black;
+}
+/* Home Section CSS */
+.home{
+    display: flex;
+    background: url("bannerhd1.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 75px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: red;
+    font-weight: 700;
+    font-family:cursive;
+}
+/* About me */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family:'Segoe UI' sans-serif;   
+    background-color:#E8F1F5;
+}
+.about .title{
+    position: relative;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content:"Who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color:white;
+    font-family: cursive;
+    padding: 5px;
+    background:#53626C;
+    transform: translateX(-50%);
+}
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left {
+width: 45%;
+}
+.about .about-content .right {
+    width: 55%;
+}
+.about .about-content .left {
+    width: 45%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color:red;
+    font-family: cursive;
+    font-weight: 700;
+}
+.about .about-content .right .text h2{
+    color: orange;
+}
+.about .table th{
+    border:5px solid black;
+    text-align: center;
+    background: #C9D6DF;
+    border-collapse: collapse;
+    padding: 5px;
+    width: 100%;
+}
+.about .table td{
+    border:5px solid black;
+    text-align: center;
+    background: #C9D6DF;
+    border-collapse: collapse;
+    padding: 5px;
+    width: 100%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 5px 10px #53626C;
+}
+.about .about-content .left img:hover{
+    width: 410px;
+    transition: width 0.5s;
+}
+
+/* Hobbies CSS */
+section{
+    padding: 100px 0;
+}
+.hobbies{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background: #53626C;
+    color: white;
+
+}
+.hobbies .title{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.hobbies .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:white;
+    transform: translateX(-50%);
+}
+.hobbies .title::after{
+    content:"QOUTES";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color:black;
+    font-weight: 700;
+    font-family:cursive;
+    padding: 5px;
+    background:#C9D6DF;
+    transform: translateX(-50%);
+    
+}
+.hobbies .hobbies-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.hobbies .hobbies-content .card{
+    width: calc(29% - 20px);
+    background: #C9D6DF;
+    height: 450px;
+    width: 300px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    border: 1px solid;
+    padding: 30px;
+    box-shadow: 5px 10px black;
+    position: relative;
+
+}
+.fblogo{
+    border-radius: 50%;
+}
+.hobbies .text-heading{
+    position: relative;
+    color: black;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    text-align: center;
+}
+.card p{
+    text-align: center;
+    color: black;
+    margin: -10px;
+    padding: 5px;
+}
+
+/* Footer CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E8F1F5;
+}
+*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-family:'Segoe UI';
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color:black;
+    size: 200px;
+}
+.socials a i{
+    font-size: 1.5rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color:#C62B88;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    color: white;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    color:#F0A501;
+    font-weight: 600;
+    text-transform: uppercase;
+   
+}
+/* Responsiveness portion */
+@media (max-width: 969px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background:orange;
+    }
+    .navbar .menu li{
+        display:block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    /* PROJECTS CSS */
+    .projects{
+        background-color: rgb(92, 92, 92);
+        padding-top: 10%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        
+        
+    }
+    .project{
+        display: flex;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+        
+        background-color: grey;
+       margin-left: 20%;
+       margin-bottom: 20px;
+       
+       width: 60%;
+       justify-content: center;
+       
+       align-items: center;
+    
+    }
+    .project .block1{
+        width: 50%;
+        height: 600px;
+        
+    }
+    .project .block2{
+        width: 50%;
+        height: 600px;
+    }
+    .project .block2 img{
+        width: 100%;
+        height: 600px;
+    }
+    .project .block1{
+        background-color: grey;
+    }
+    .project .block1 .decription{
+        color: white;
+        text-align: center;
+        width: 294px;
+        height: 600px;
+        padding-left: 5%;
+        padding-right: 5%;
+        
+        text-shadow:0px 0px 50px black;
+        
+       
+    }
+    .project .block1 .decription h2{
+        vertical-align: middle;
+        padding-top: 25%;
+    
+    }
+    .project .block1 .decription p{
+        vertical-align: middle;
+        padding-top: 25%;
+        
+    }
+    table{
+        padding-top: 30%;
+        width: 100%;
+    
+    }
+    th{
+        padding-bottom: 15px;
+    }
+    /* QOUTES CSS */
+section{
+    padding: 100px 0;
+}
+.qoutes{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background: #53626C;
+    color: white;
+
+}
+.qoutes .qoutestitle{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.qoutes .qoutestitle::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background:white;
+    transform: translateX(-50%);
+}
+.qoutes .qoutestitle::after{
+    content:"QOUTES";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color:black;
+    font-weight: 700;
+    font-family:cursive;
+    padding: 5px;
+    background:#C9D6DF;
+    transform: translateX(-50%);
+    
+}
+.qoutes .qoutes-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.qoutes .qoutes-content .qoutescard{
+    width: calc(29% - 20px);
+    background: #C9D6DF;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    border: 1px solid;
+    padding: 30px;
+    box-shadow: 5px 10px black;
+    position: relative;
+
+}
+.fblogo{
+    border-radius: 50%;
+}
+.qoutes .qoutestext-heading{
+    position: relative;
+    color: black;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    text-align: center;
+}
+.qoutescard p{
+    text-align: center;
+    color: black;
+    margin: -10px;
+    padding: 5px;
+}
+
+} /* Contact Me */
+body{
+    padding: 0px;
+    margin: 0px;  
+    font-family: sans-serif;
+  
+   }   
+ .container{
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+      padding: 10%
+    }
+    /* contact form css */
+
+    #contact-section{
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(../imgs/contact.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100% ;
+      padding-bottom: 2%;
+    }
+
+    #contact-section .container h2{
+      text-align: center;
+      text-decoration: underline;
+      text-underline-position: under;
+      color: rgb(238, 235, 235);
+      letter-spacing: 2px;
+    }
+
+    #contact-section .container p{
+      text-align: center; 
+      width: 70%; 
+      margin-left: auto;
+      margin-right: auto; 
+      padding-bottom: 3%;
+      color: #fff;
+      letter-spacing:3px;
+    }
+
+    .contact-form i.fa{
+      font-size: 22px; 
+      padding: 3%;
+      background-color: none;
+      border-radius: 80%;
+      margin: 2%;
+      cursor: pointer;
+      border:2px solid rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
+    }
+    
+    .contact-form i.fa:hover{
+      cursor: pointer;
+      border:2px solid white;
+      color: white;
+    }
+     
+      .contact-form{
+        display: grid;
+        grid-template-columns: auto auto;
+         }
+      
+      .form-info{
+        font-size: 16px;
+        font-style: italic;
+        color: white;
+        letter-spacing: 2px;
+      }
+      input{
+        padding: 10px;
+        margin:10px;
+        width: 70%;
+        background-color:rgba(136, 133, 133, 0.5);
+        color: white;
+        border: none;
+        outline:none;
+      }
+
+      input::placeholder{
+        color: white;
+      }
+    
+       textarea{
+      padding: 10px;
+      margin: 10px;     
+      width: 70%;
+      background-color:rgba(136, 133, 133, 0.5);
+      color: white;
+      border: none;
+      outline:none;
+     }
+     textarea::placeholder{
+       color: white;
+     }
+      .submit{
+      width: 40%;
+      background: none;
+      padding: 4px;
+      outline: none;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 33px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-left: 3%;
+      border:2px solid rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
+     }
+
+     .submit:hover{
+           border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+     }
+
+        /* media queries */
+    @media (max-width: 768px){
+
+ #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      #contact-section .submit{
+
+        width: 60%;
+      }
+      .aboutme
+      {
+        color:red;
+        padding: 10px;
+        margin:10px;
+        width: 70%;
+        background-color:rgba(134, 2, 2, 0.5);
+        border: none;
+        outline:none;
+      }
+  }
+  /*MEDIA RESPONSIVE
+  @media (max-width: 1615){
+      .max-width{
+          padding: 0 50px;
+      }
+      .navbar .menu{
+          position: fixed;
+          height: 100vh;
+          width
+  }
+  */
